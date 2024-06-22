@@ -106,9 +106,9 @@ export default function Home() {
         </div>
       </div>
 
-      <Footer container>
-        <FooterCopyright href="#" by="Yang Yi" year={2024} />
-        <FooterLinkGroup>
+      <Footer className="bg-[#9EC084] " container>
+        <FooterCopyright className="text-white" href="#" by="Yang Yi" year={2024} />
+        <FooterLinkGroup className="text-white">
           <FooterLink href="#">About</FooterLink>
           <FooterLink href="#">Privacy Policy</FooterLink>
           <FooterLink href="#">Licensing</FooterLink>

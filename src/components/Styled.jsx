@@ -4,7 +4,7 @@ export const StyledButton = styled.a`
   position: relative;
   min-width: 200px;
   background: #FFFFFF;
-  border: 2px solid #9EC084;
+  border: 2px solid #55B849;
   transform: translate3d(0px, 0%, 0px);
   font-size: 1rem;
   font-weight: bold;
@@ -26,7 +26,7 @@ export const StyledButton = styled.a`
   }
 
   &:before {
-    background: #9EC084;
+    background: #55B849;
     border-radius: 50% 50% 0 0;
     transform: translateY(100%) scaleY(0.5);
   }
@@ -68,7 +68,7 @@ export const StyledButton = styled.a`
   }
 
   &:hover {
-    background: #9EC084;
+    background: #55B849;
     transition: background 0.2s linear;
     transition-delay: 0.6s;
     color: #FFFFFF;
