@@ -6,6 +6,8 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Card from "../components/Card";
+import AutoSizeImage from "../components/AutoSizeImage";
 import {
   Navbar,
   NavbarBrand,
@@ -19,8 +21,6 @@ import {
   Carousel,
   DarkThemeToggle,
 } from "flowbite-react";
-import Card from "../components/Card";
-import AutoSizeImage from "../components/AutoSizeImage";
 
 export default function Home() {
   const [items, setItems] = useState([]);
@@ -37,9 +37,9 @@ export default function Home() {
 
   return (
     <>
-      <div className="bg-cyan-800">
+      <div className="bg-[#9EC084]">
         <div className="container mx-auto">
-          <Navbar fluid className="bg-cyan-800">
+          <Navbar fluid className="bg-[#9EC084]">
             <NavbarBrand as={Link} href="/">
               <AutoSizeImage
                 src="https://www.yuntech.edu.tw/images/website_png/Group_640.png"
@@ -52,18 +52,18 @@ export default function Home() {
             </NavbarBrand>
             <NavbarToggle />
             <NavbarCollapse>
-              <NavbarLink href="#" className="text-white">
-                <span className="px-4 py-2 hover:text-yellow-500 hover:border-yellow-500 hover:border-b-2">
+              <NavbarLink href="https://tour.yunlin.gov.tw/wt-front/Attraction/HotSpots" target="_blank" className="text-white">
+                <span className="px-4 py-2 hover:text-[#F7E3DA] hover:border-[#F7E3DA] hover:border-b-2">
                   景點
                 </span>
               </NavbarLink>
-              <NavbarLink as={Link} href="#" className="text-white">
-                <span className="px-4 py-2 hover:text-yellow-500 hover:border-yellow-500 hover:border-b-2">
+              <NavbarLink as={Link} href="https://tour.yunlin.gov.tw/wt-front/TourService/TrafficInfo" target="_blank" className="text-white">
+                <span className="px-4 py-2 hover:text-[#F7E3DA] hover:border-[#F7E3DA] hover:border-b-2">
                   交通
                 </span>
               </NavbarLink>
-              <NavbarLink href="#" className="text-white">
-                <span className="px-4 py-2 hover:text-yellow-500 hover:border-yellow-500 hover:border-b-2">
+              <NavbarLink href="https://www.yuntech.edu.tw/" target="_blank" className="text-white">
+                <span className="px-4 py-2 hover:text-[#F7E3DA] hover:border-[#F7E3DA] hover:border-b-2">
                   關於我們
                 </span>
               </NavbarLink>
@@ -97,8 +97,6 @@ export default function Home() {
           />
         </Carousel>
       </div>
-
-    
     
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
@@ -108,10 +106,8 @@ export default function Home() {
         </div>
       </div>
 
-      
-
       <Footer container>
-        <FooterCopyright href="#" by="Yunlin™" year={2024} />
+        <FooterCopyright href="#" by="Yang Yi" year={2024} />
         <FooterLinkGroup>
           <FooterLink href="#">About</FooterLink>
           <FooterLink href="#">Privacy Policy</FooterLink>
