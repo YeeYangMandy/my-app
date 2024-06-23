@@ -1,5 +1,5 @@
 /**
- * @author Yang Yi <oprtigk@gmail.com>
+ * @author Yi Yang <oprtigk@gmail.com>
  */
 
 "use client";
@@ -107,7 +107,7 @@ export default function Home() {
       </div>
 
       <Footer className="bg-[#9EC084] " container>
-        <FooterCopyright className="text-white" href="#" by="Yang Yi" year={2024} />
+        <FooterCopyright className="text-white" href="#" by="Yi Yang" year={2024} />
         <FooterLinkGroup className="text-white">
           <FooterLink href="#">About</FooterLink>
           <FooterLink href="#">Privacy Policy</FooterLink>

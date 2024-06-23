@@ -1,8 +1,6 @@
 export async function GET() {
-    // 1. get access token
     const token = await getToken();
 
-    // 2. get data from TDX api
     if (token) {
         const apiData = await fetchData(token);
         return Response.json(apiData);
@@ -32,7 +30,7 @@ async function getToken() {
 
         if (response.ok) {
             const data = await response.json();
-            //console.log(JSON.stringify(data));
+            console.log(JSON.stringify(data));
             return data.access_token;
         } else {
             console.error("Error fetching token:", response.status);
